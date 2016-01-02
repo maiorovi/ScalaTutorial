@@ -25,8 +25,13 @@ public class Reflector {
         System.out.println();
 
         System.out.println("IMPLEMENTED INTERFACES:");
-        for( Class inter :obj.getInterfaces()) {
-            System.out.println(inter.getCanonicalName());
+        Class[] interfaces = obj.getInterfaces();
+        if (interfaces.length != 0) {
+            for (Class inter : interfaces) {
+                System.out.println(inter.getCanonicalName());
+            }
+        } else {
+            System.out.println("-");
         }
         System.out.println();
 
