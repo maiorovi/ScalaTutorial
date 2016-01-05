@@ -1,6 +1,6 @@
 package oderskybook.chapter6
 
-class Rational(n:Int, d:Int) {
+class Rational(n:Int, d:Int) extends Ordered[Rational] {
   require(d != 0)
 
   private val g = gcd(n.abs, d.abs)
@@ -27,6 +27,8 @@ class Rational(n:Int, d:Int) {
   def max(that:Rational):Rational = if (this.lessThan(that)) that else this
 
   private def gcd(fst:Int, snd:Int):Int = if (snd == 0) fst else gcd(snd, fst % snd)
+
+  override def compare(that: Rational): Int = this.numer * that.denom - that.numer * this.denom
 }
 
 object Rational {

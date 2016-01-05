@@ -1,5 +1,11 @@
 package oderskybook.chapter12
 
-object PhilosophicalDemo extends App {
+import investigation.Reflector
 
+object PhilosophicalDemo extends App {
+  Reflector.reflect(Philosophical.frog.getClass)
+
+  val frog:Philosophical =  Philosophical.frog
+
+  frog.philosofize()
 }
