@@ -1,7 +1,7 @@
 package golovach.functions
 
 /**
-  * Created by egor on 1/1/16.
+  * Created by egor on one/one/16.
   */
 class Demo {
 

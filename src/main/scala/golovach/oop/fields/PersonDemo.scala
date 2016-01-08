@@ -1,7 +1,7 @@
 package golovach.oop.fields
 
 /**
-  * Created by egor on 1/2/16.
+  * Created by egor on one/2/16.
   */
 object PersonDemo extends App {
     val person:Person0 =  new Person0

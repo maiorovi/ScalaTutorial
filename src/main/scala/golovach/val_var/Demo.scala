@@ -1,7 +1,7 @@
 package golovach.val_var
 
 /**
-  * Created by egor on 1/1/16.
+  * Created by egor on one/one/16.
   */
 class Demo {
   var m_field:Int = 0 //mutable field
