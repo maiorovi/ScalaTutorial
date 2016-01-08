@@ -8,7 +8,7 @@ object Sprial {
 
   def spiral(nEdges:Int, direction:Int):Element = {
     if (nEdges == 1) {
-      elem("+")
+      corner
     } else {
       val sp = spiral(nEdges - 1, (direction + 3) % 4)
       def verticalBar = elem('|', 1, sp.height)
