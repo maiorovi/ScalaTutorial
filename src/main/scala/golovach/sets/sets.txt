@@ -1,0 +1,29 @@
+0. Category Theory + Set Theory = Basic of Math / Computer Science
+
+1. Def
+    Set - is unordered collection of distinct objects
+    considered as an object in its own right
+
+    Ex: {1,2,3}
+
+    {1,2,3} = {3,2,1}
+
+    Empty Set = {}
+
+2. Ways to define a set :
+    2.1 Using enumeration of all values (extensional definition)
+        val set = Set(1,2,3,4) // for this definition we can use collections
+
+    2.2 Predicative definition (intensional definition)
+        predicate on some concrete set(Int, String ,Color)
+        def p(x:Int):Boolean = _ > 0
+        val p: Int => Boolean = _ > 10
+
+        predicate on universal set(Any, AnyRef, AnyVal,...)
+        def p(x:Any):Boolean = ???
+        val p: Any => Boolean = ???
+
+    2.3 Generative definition
+        val set:Iterator[Int] = ???
+        val stream:Stream[Int] = ???
+

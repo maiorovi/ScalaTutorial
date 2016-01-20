@@ -29,6 +29,9 @@ object Demo1 {
     val q = return 0
     0
   }
+  var x = 0
+
+  x += 5
 
 // from this expressions you can create expression composion. And expression composition is also expression!!!
 }

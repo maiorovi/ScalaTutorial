@@ -8,4 +8,4 @@ object Demo extends App {
  val ref = new AnyRef
 }
 
-class MyClass(val x:Int, val y:Int) extends AnyVal
+//class MyClass(val x:Int, val y:Int) extends AnyVal
