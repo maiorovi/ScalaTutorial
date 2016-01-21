@@ -1,0 +1,28 @@
+1. every function of one argument can be represented as a binary relation
+
+ f: A => B, where A= {1,2,3,4}, B={1,2,3,4,5}
+
+ f(x) = x / 2
+
+  x | f(x)
+  0 | 0
+  1 | 0
+  2 | 1
+  3 | 1
+  4 | 2
+
+  f == {(0,0), (1,0), (2,1), (3,1), (4,2)}
+  f == subset of (A,B) == binary relation on (A,B)
+
+2. Domain, Codomain
+
+Domain(f) = {0,1,2,3,4}
+Codomain(f) = {0,1,2}
+
+3. Partially defined, Totaly defined
+if Domain(f) == A - totaly defined function
+if Domain(f) == subset(A) - partialy defined function
+
+Пусть А и В — два множества. Бинарным отношением между множествами А и
+В называется тройка (A,B,R), где R — подмножество прямого произведения А
+и В

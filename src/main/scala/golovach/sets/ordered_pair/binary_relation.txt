@@ -1,0 +1,9 @@
+1. Binary relation
+2. Binary relation on set A is a subset of Cartesian product (A,A)
+    subset of (A,A) is difened in predicative form = (A,A) => Boolean
+
+3. Example
+    A = {1,2,3,4}
+
+    Enumerable form
+    R(<) = {(1,2), (1,3)}

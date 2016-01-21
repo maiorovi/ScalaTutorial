@@ -1,0 +1,10 @@
+1. Ordered pair 2-tuple: a,b ~> (a,b)
+
+    (a,b) != (b,a)
+
+
+We need ordered pairs to define Cartesian product: A,B (where A and B are sets), set of all ordered pairs (A,B)
+
+
+2) Cardinality
+    |(A,B)| = |A| * |B|
