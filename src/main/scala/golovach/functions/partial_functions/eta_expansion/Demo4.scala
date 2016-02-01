@@ -4,7 +4,7 @@ package golovach.functions.partial_functions.eta_expansion
 object Demo4 extends App {
   def m(k:Int, l:Int) = k + l
 
-  val f = m
+//  val f = m
   val f1:(Int,Int) => Int = m
 
   val f2 = m _
