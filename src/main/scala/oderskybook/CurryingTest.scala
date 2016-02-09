@@ -7,9 +7,9 @@ object CurryingTest extends App {
 
 
   println(m0(0,1)) // curring form is not allowed
-  val func = m0(0, _) // partial application
+  val func: Int => Int = m0(0, _) // partial application
   println(func(5))
 
-  val func0 = m1(5)
+  val func0: Int => Int = m1(5)
   println(func0(6))
 }
