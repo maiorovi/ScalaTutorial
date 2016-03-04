@@ -4,13 +4,13 @@ abstract class Stack[A] {
   def push(x:A) = new NonEmptyStack(x, this)
   def pop:A
   def isEmpty:Boolean
-  def top:NonEmptyStack[A]
+  def top:Stack[A]
 }
 
 class EmptyStack[A] extends Stack[A] {
-  override def pop: Int = error("EmptyStack.pop")
+  override def pop: A = error("EmptyStack.pop")
 
-  override def top: NonEmptyStack = error("EmptyStack.top")
+  override def top: NonEmptyStack[A] = error("EmptyStack.top")
 
   override def isEmpty: Boolean = true
 }

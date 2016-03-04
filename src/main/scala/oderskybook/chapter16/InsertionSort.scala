@@ -2,7 +2,7 @@ package oderskybook.chapter16
 
 object InsertionSort extends App {
 
-  def isort[T](xs:List[T]):List[T] = if (xs.isEmpty) Nil else insert(xs.head, isort(xs.tail))
+  def isort[T <: Ordered[T]](xs:List[T]):List[T] = if (xs.isEmpty) Nil else insert(xs.head, isort(xs.tail))
 
   def insert[T <: Ordered[T]](x:T, xs:List[T]):List[T] = if (xs.isEmpty || xs.head <= x) x::xs else xs.head :: insert(x, xs.tail)
 }
